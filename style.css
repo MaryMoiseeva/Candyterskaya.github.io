@@ -1,0 +1,206 @@
+body { 
+    font-family: Arial, sans-serif; 
+    margin: 0; 
+    padding: 0; 
+} 
+ 
+
+/* Шапка */
+header { 
+    background-color: #fca0d0; 
+    color: white; 
+    padding: 1rem 0; 
+    text-align: center; 
+} 
+ 
+nav ul { 
+    list-style-type: none; 
+    padding: 0; 
+} 
+ 
+nav ul li { 
+    display: inline; 
+    margin: 0 1rem; 
+} 
+ 
+nav ul li a { 
+    color: white; 
+    text-decoration: none; 
+} 
+ 
+main { 
+    padding: 2rem; 
+} 
+ 
+section { 
+    margin-bottom: 2rem; 
+} 
+ 
+
+/* Каталог */
+h2 {
+    text-align: center;
+    font-size: 40px;
+}
+.div1{
+    display: inline-block;
+    margin-left: 250px;
+    margin-right: 25px;
+}
+.div2{
+    display: inline-block;
+    margin-left: 25px;
+}
+.div1 h5{
+    text-align: center;
+    font-size: 30px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+.div1 a{
+    text-decoration: underline;
+    color: #ef2c91;
+}
+.div2 h5{
+    text-align: center;
+    font-size: 30px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+.div2 a{
+    text-decoration: underline;
+    color: #ef2c91;
+}
+
+
+
+/* Тортики */
+.product { 
+    border: 1px solid #ddd; 
+    padding: 1rem; 
+    margin-bottom: 1rem; 
+} 
+
+ 
+
+ /* Форма обратной связи */
+.form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+.contact-form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%;
+}
+
+.contact-form h2 {
+    margin-top: 0;
+    margin-bottom: 15px;
+    font-size: 24px;
+    text-align: center;
+}
+
+.contact-form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.contact-form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #ef2c91;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+
+}
+
+.contact-form button:hover {
+    background-color: #ef2c91;
+}
+
+/* Авторизация входа */
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+.contact-login {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%;
+}
+
+.contact-login h2 {
+    margin-top: 0;
+    margin-bottom: 15px;
+    font-size: 24px;
+    text-align: center;
+}
+
+.contact-login label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.contact-login input,
+.contact-login textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.contact-login button {
+    width: 100%;
+    padding: 10px;
+    background-color: #ef2c91;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.contact-login button:hover {
+    background-color: #ef2c91;
+}
+
+
+/* Подвал */
+footer { 
+    text-align: center; 
+    padding: 1rem 0; 
+    background-color: #fca0d0; 
+    color: white; 
+}

@@ -1,0 +1,75 @@
+<!DOCTYPE html> 
+<html lang="ru"> 
+<head> 
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>Candyterskaya</title> 
+    <link rel="stylesheet" href="style.css"> 
+</head> 
+<body> 
+    <header> 
+        <h1>Candyterskaya</h1> 
+        <nav> 
+            <ul> 
+                <li><a href="#catalog">Каталог</a></li> 
+                <li><a href="#feedback">Обратная связь</a></li> 
+                <li><a href="#login">Вход</a></li> 
+            </ul> 
+        </nav> 
+    </header> 
+ 
+    <main> 
+        <section id="catalog"> 
+            <h2>Каталог товаров</h2> 
+            <div class="div1">
+                <img src="tort.jpg" height="430px" width="430px" />
+                <h5><a href="tort.html">Торты</a></h5>
+            </div>
+            <div class="div2">
+                <img src="piroshnie.jpg" height="430px" width="430px"/>
+                <h5><a href="piroshnie.html">Пирожные</a></h5>
+            </div>
+        </section> 
+ 
+        <section id="feedback"> 
+            <div class="form-container">
+                <form class="contact-form"> 
+                    <h2>Обратная связь</h2> 
+                    <label for="name">Имя:</label> 
+                    <input type="text" id="name" name="name" required> 
+                    <label for="email">Email:</label> 
+                    <input type="email" id="email" name="email" required> 
+                    <label for="message">Сообщение:</label> 
+                    <textarea id="message" name="message" required></textarea> 
+                    <button type="submit">Отправить</button> 
+                </form> 
+            </div>
+        </section> 
+ 
+        <section id="login"> 
+            <div class="login-container">
+                <form class="contact-login"> 
+                    <h2>Вход</h2> 
+                    <label for="username">Имя пользователя:</label> 
+                    <input type="text" id="username" name="username" required> 
+                    <label for="password">Пароль:</label> 
+                    <input type="password" id="password" name="password" required> 
+                    <label for="role">Роль:</label> 
+                    <select id="role" name="role"> 
+                        <option value="buyer">Покупатель</option> 
+                        <option value="seller">Продавец</option> 
+                    </select> 
+                    <button type="submit">Войти</button> 
+                </form> 
+            </div>
+        </section> 
+    </main> 
+ 
+    <footer> 
+        <p>&copy; 2024 Candyterskaya</p> 
+    </footer> 
+ 
+    <script src="script.js"></script> 
+    <script src="script1.js"></script>
+</body> 
+</html>
