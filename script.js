@@ -3,7 +3,6 @@ const feedback = document.getElementById('feedback');
 
 // Добавляем обработчик события onSubmit
 feedback.addEventListener('submit', function(event) {
-    event.preventDefault(); // Отменяем переход на другую страницу при отправке формы
 
     // Получаем значения из полей формы
     const name = document.getElementById('name').value;
@@ -25,26 +24,7 @@ feedback.addEventListener('submit', function(event) {
     alert('Данные успешно отправлены!');
 
     // Очищаем поля формы
-    document.getElementById('name').value = '';
-    document.getElementById('email').value = '';
-    document.getElementById('message').value = '';
+    // document.getElementById('name').value = '';
+    // document.getElementById('email').value = '';
+    // document.getElementById('message').value = '';
 });
-
-// Добавляем функциональность поиска на странице со списком данных
-const searchInput = document.getElementById('searchInput');
-
-searchInput.addEventListener('input', function() {
-    const searchTerm = searchInput.value.toLowerCase(); // Получаем значение из поля поиска и переводим его в нижний регистр
-
-    // Проход по всем элементам для поиска и скрытия ненужных
-    const items = document.getElementsByClassName('searchable-item');
-    Array.from(items).forEach(function(item) {
-        const text = item.textContent.toLowerCase();
-        if(text.includes(searchTerm)) {
-            item.style.display = 'block';
-        } else {
-            item.style.display = 'none';
-        }
-    });
-});
-

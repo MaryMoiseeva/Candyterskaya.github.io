@@ -1,0 +1,60 @@
+<!DOCTYPE html> 
+<html lang="ru"> 
+<head> 
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>Candyterskaya</title> 
+    <link rel="stylesheet" href="style.css"> 
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head> 
+<body> 
+    <header> 
+        <h1>Candyterskaya</h1> 
+        <nav> 
+            <ul> 
+                <li><a href="#catalog">Каталог</a></li> 
+                <li><a href="#feedback">Обратная связь</a></li> 
+                <li><a href="cart.php">Корзина</a></li>
+                <li><a href="login.html" target="_self">Вход</a></li> 
+                <li><a href="regestretion.html" taget="_self">Регистрация</a></li>
+            </ul> 
+        </nav> 
+    </header> 
+ 
+    <main> 
+        <section id="catalog"> 
+            <h2>Каталог товаров</h2> 
+            <div class="div1">
+                <img src="uploads/tort.jpg" height="430px" width="430px" />
+                <h5><a href="tort-buyer.php">Торты</a></h5>
+            </div>
+            <div class="div2">
+                <img src="uploads/piroshnie.jpg" height="430px" width="430px"/>
+                <h5><a href="piroshnie-buyer.php">Пирожные</a></h5>
+            </div>
+        </section> 
+ 
+        <section id="feedback"> 
+            <div class="form-container">
+                <form class="contact-form" action="feedback.php" method="POST">
+                    <h2>Обратная связь</h2> 
+                    <label for="name">Имя:</label> 
+                    <input type="text" id="name" name="name" required> 
+                    <label for="email">Email:</label> 
+                    <input type="email" id="email" name="email" required> 
+                    <label for="message">Сообщение:</label> 
+                    <textarea id="message" name="message" required></textarea> 
+                    <button type="submit">Отправить</button> 
+                </form> 
+            </div>
+        </section> 
+    </main> 
+ 
+    <footer> 
+        <p>&copy; 2024 Кондитерская</p> 
+    </footer> 
+ 
+    <script src="add_to_cart.js"></script> 
+    <script src="script.js"></script> 
+</body> 
+</html>
